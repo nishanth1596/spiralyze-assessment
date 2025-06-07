@@ -1,0 +1,211 @@
+/* **************** */
+/* CSS RESET */
+/* **************** */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* **************** */
+/* Root styles */
+/* **************** */
+
+:root {
+  /* Colors */
+  --color-5BC8AF: #5bc8af;
+  --color-297C6B: #297c6b;
+  --color-194D44: #194d44;
+  --color-333333: #333333;
+  --color-EAEAEA: #eaeaea;
+
+  --bg-LinearGradient: linear-gradient(to right, #194d41 0%, #194d41 70%);
+
+  --bg-LinearGradientContact: linear-gradient(to right, #2a7d6c, #3e6960 62%);
+
+  /* Typography */
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* **************** */
+/* CSS for the pages start from here */
+/* **************** */
+
+/* **************** */
+/* CSS for Header */
+/* **************** */
+
+.header {
+  padding-inline: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 2.75rem;
+
+  background: var(--bg-LinearGradient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* **************** */
+/* CSS for Main */
+/* **************** */
+
+/* **************** */
+/* CSS for Hero Section */
+/* **************** */
+
+.hero {
+  position: relative;
+  padding-inline: 1rem;
+  text-align: center;
+
+  background: url("assets/mobile/hero-bg-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-LinearGradient);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.hero-heading,
+.hero p,
+.form {
+  position: relative;
+  z-index: 1;
+
+  color: white;
+}
+
+.hero-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-heading .outlined {
+  font-weight: 300;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.hero-heading .bold {
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 1rem;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+}
+
+.form {
+  background: var(--bg-LinearGradientContact);
+  color: white;
+  box-shadow: 0px 10px 50px 0 rgba(0, 0, 0, 0.12);
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+  margin-top: 0.75rem;
+  border-radius: 0.5rem;
+  padding-top: 2.25rem;
+  padding-bottom: 3.5rem;
+}
+
+.first-name {
+  position: relative;
+}
