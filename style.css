@@ -142,6 +142,7 @@ body {
 .hero {
   position: relative;
   padding-inline: 1rem;
+  padding-bottom: 56px;
   text-align: center;
 
   background: url("assets/mobile/hero-bg-image.png");
@@ -204,8 +205,69 @@ body {
   border-radius: 0.5rem;
   padding-top: 2.25rem;
   padding-bottom: 3.5rem;
+
+  /* positioning for background image */
+  position: relative;
 }
 
 .first-name {
   position: relative;
+}
+
+.submit-btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 41px;
+  width: 100%;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  box-shadow: 0px 4px 6px 0 rgba(0, 0, 0, 0.08);
+  background-color: var(--color-5BC8AF);
+  border: none;
+  color: white;
+}
+
+/* **************** */
+/* CSS for Info Section */
+/* **************** */
+
+.info {
+  margin-inline: 1rem;
+  color: var(--color-333333);
+}
+
+.info-para {
+  font-weight: 400;
+  font-size: 14.75px;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+}
+
+.info-para-extraMargin {
+  margin-top: 1.5rem;
+}
+
+.anchor-tag {
+  margin-top: 1.5rem;
+  padding-top: 15px;
+  padding-bottom: 9px;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid var(--color-5BC8AF);
+
+  text-decoration: none;
+  color: var(--color-5BC8AF);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  cursor: pointer;
 }
